@@ -12,7 +12,11 @@ permissions:
   copilot-requests: write
 engine: copilot
 network:
-  allowed: []
+  allowed:
+    - defaults
+    - copilot
+    - copilot-vendor
+    - github
 tools:
   github:
     mode: gh-proxy
